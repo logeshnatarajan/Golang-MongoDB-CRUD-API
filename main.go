@@ -9,7 +9,8 @@ import (
 )
 
 func main(){
-
+	
+	// All Starts Here
 	r := httprouter.New()
 	uc := controllers.NewUserController(getSession())
 	r.GET("/user/:id", uc.GetUser)
